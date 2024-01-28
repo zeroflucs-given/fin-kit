@@ -1,0 +1,7 @@
+*.tmp
+*.zip
+*.log
+*.csv
+.DS_Store
+thumbs.db
+env

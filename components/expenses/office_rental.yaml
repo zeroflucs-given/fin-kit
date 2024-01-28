@@ -1,0 +1,14 @@
+type:         Expense
+provider:     RentalCorp
+description:  Office Rental
+currency:     AUD
+category:     Office Expenses
+enabled:      true
+
+start_date:    2024-01-01
+payment_schedule:
+  - action:     repeat
+    frequency:  monthly
+    interval:   1
+    note:       
+    amount:     4500

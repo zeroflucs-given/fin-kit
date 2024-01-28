@@ -1,0 +1,27 @@
+type:         Expense
+provider:     Jack Smith
+description:  Sales
+currency:     AUD
+category:     Employees and Contractors
+enabled:      true
+
+start_date:    2024-01-01
+align_date:    2024-02-04 # Use this to force some dates to line up, i.e. to model a payroll fortnightly
+
+payment_schedule:
+  - action:     repeat
+    frequency:  weekly
+    interval:   2
+    note:       Fortnightly salary
+    amount:     125000
+    scalar:     1.11
+    divisor:    26
+    until:      2025-01-01
+  # Annual increase IN 2025
+  - action:     repeat
+    frequency:  weekly
+    interval:   2
+    note:       Fortnightly salary
+    amount:     145000
+    scalar:     1.11
+    divisor:    26

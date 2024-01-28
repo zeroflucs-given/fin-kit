@@ -1,0 +1,29 @@
+type:         Revenue
+provider:     CustomerCorp
+description:  Monthly contract
+currency:     AUD
+category:     Clients
+enabled:      true
+
+start_date:    2023-11-01
+payment_schedule:
+  - action:     repeat
+    frequency:  monthly
+    interval:   1
+    note:       Monthly payment
+    amount:     7000
+    until:      2024-01-01
+  # Simulate some increases annually
+  - action:     repeat
+    frequency:  monthly
+    interval:   1
+    note:       Monthly payment
+    amount:     15000
+    until:      2025-01-01
+  - action:     repeat
+    frequency:  monthly
+    interval:   1
+    note:       Monthly payment
+    amount:     25000
+    
+
